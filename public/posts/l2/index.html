@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>sysc 4120 lab 2 notes - Notes Website</title>
+
+  
+  <meta name="theme-color" />
+  
+  <meta name="description" content="chapter 4 architecture characteristics defined architecture characteristic describes a concern critical to the success of the architecture
+like non functional but more important
+not usually in requirements, but can be in
+non domain design consideration certain level of performance for the application
+not written in requirements
+influences some structural aspect of design security, influences structure critical or important to application success fewest most possible explicit vs implicit explicit characteristic characteristic that appears in requirements documentation implicit characteristic characteristic necessary for project success, but does not appear in requirements documentation" />
+  <meta
+    name="author"
+    content=""
+  />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://example.org/main.min.css" />
+
+  
+  <script
+    defer
+    src="http://example.org/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="http://example.org/theme.png" />
+
+  
+  
+  
+  
+
+  
+
+  
+  <link rel="icon" href="http://example.org/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.110.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="sysc 4120 lab 2 notes" />
+<meta property="og:description" content="chapter 4 architecture characteristics defined architecture characteristic describes a concern critical to the success of the architecture
+like non functional but more important
+not usually in requirements, but can be in
+non domain design consideration certain level of performance for the application
+not written in requirements
+influences some structural aspect of design security, influences structure critical or important to application success fewest most possible explicit vs implicit explicit characteristic characteristic that appears in requirements documentation implicit characteristic characteristic necessary for project success, but does not appear in requirements documentation" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/l2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-29T00:00:00+00:00" />
+
+  
+  <meta itemprop="name" content="sysc 4120 lab 2 notes">
+<meta itemprop="description" content="chapter 4 architecture characteristics defined architecture characteristic describes a concern critical to the success of the architecture
+like non functional but more important
+not usually in requirements, but can be in
+non domain design consideration certain level of performance for the application
+not written in requirements
+influences some structural aspect of design security, influences structure critical or important to application success fewest most possible explicit vs implicit explicit characteristic characteristic that appears in requirements documentation implicit characteristic characteristic necessary for project success, but does not appear in requirements documentation"><meta itemprop="datePublished" content="2023-01-29T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-01-29T00:00:00+00:00" />
+<meta itemprop="wordCount" content="517">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="sysc 4120 lab 2 notes"/>
+<meta name="twitter:description" content="chapter 4 architecture characteristics defined architecture characteristic describes a concern critical to the success of the architecture
+like non functional but more important
+not usually in requirements, but can be in
+non domain design consideration certain level of performance for the application
+not written in requirements
+influences some structural aspect of design security, influences structure critical or important to application success fewest most possible explicit vs implicit explicit characteristic characteristic that appears in requirements documentation implicit characteristic characteristic necessary for project success, but does not appear in requirements documentation"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold"
+      href="http://example.org/"
+      >Notes Website</a
+    >
+    <a
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+    ></a>
+  </div>
+
+  <a
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+  ></a>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-20 pb-32 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">sysc 4120 lab 2 notes</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>Jan 29, 2023</time>
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h1 id="chapter-4-architecture-characteristics-defined">chapter 4 architecture characteristics defined</h1>
+<h1 id="architecture-characteristic">architecture characteristic</h1>
+<ul>
+<li>
+<p>describes a concern critical to the success of the architecture</p>
+</li>
+<li>
+<p>like non functional but more important</p>
+</li>
+<li>
+<p>not usually in requirements, but can be in</p>
+</li>
+</ul>
+<h2 id="non-domain-design-consideration">non domain design consideration</h2>
+<ul>
+<li>
+<p>certain level of performance for the application</p>
+</li>
+<li>
+<p>not written in requirements</p>
+</li>
+</ul>
+<h2 id="influences-some-structural-aspect-of-design">influences some structural aspect of design</h2>
+<ul>
+<li>security, influences structure</li>
+</ul>
+<h2 id="critical-or-important-to-application-success">critical or important to application success</h2>
+<ul>
+<li>fewest most possible</li>
+</ul>
+<h1 id="explicit-vs-implicit">explicit vs implicit</h1>
+<h2 id="explicit-characteristic">explicit characteristic</h2>
+<ul>
+<li>characteristic that appears in requirements documentation</li>
+</ul>
+<h2 id="implicit-characteristic">implicit characteristic</h2>
+<ul>
+<li>
+<p>characteristic necessary for project success, but does not appear in requirements documentation</p>
+</li>
+<li>
+<p>ex. availability, reliability, security, not business language</p>
+</li>
+</ul>
+<h1 id="architecture-characteristics-categories">architecture characteristics categories</h1>
+<h2 id="operational">operational</h2>
+<ul>
+<li>performance, scalability, elasticity, availability, and reliability</li>
+</ul>
+<h2 id="structural">structural</h2>
+<ul>
+<li>code structure, modularity, readable code</li>
+</ul>
+<h2 id="cross-cutting">cross-cutting</h2>
+<ul>
+<li>fall outside yet are important</li>
+</ul>
+<h1 id="arch-char-table">arch char table</h1>
+<h2 id="operational-1">operational</h2>
+<p>these are how well the funitures in the room functions</p>
+<table>
+<thead>
+<tr>
+<th>term</th>
+<th>def</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>availability</td>
+<td>system up time</td>
+</tr>
+<tr>
+<td>continuity</td>
+<td>recovery from disaster</td>
+</tr>
+<tr>
+<td>performance</td>
+<td>stress testing, frequency of functions used</td>
+</tr>
+<tr>
+<td>recoverability</td>
+<td>biz req, with disaster, how quick is system back online</td>
+</tr>
+<tr>
+<td>reliability/safety</td>
+<td>system fail safe, mission critical</td>
+</tr>
+<tr>
+<td>robustness</td>
+<td>handle error</td>
+</tr>
+<tr>
+<td>scalability</td>
+<td>perform as number of users increases</td>
+</tr>
+</tbody>
+</table>
+<h2 id="structural-1">structural</h2>
+<p>these are more about the structural, aka, shape of the software, how funitures are arranged in the room</p>
+<table>
+<thead>
+<tr>
+<th>term</th>
+<th>def</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configurability</td>
+<td>ability for users to easily change software config</td>
+</tr>
+<tr>
+<td>! extensibility</td>
+<td>how important to plug new functionality in</td>
+</tr>
+<tr>
+<td>installability</td>
+<td>ease of system install on all platforms</td>
+</tr>
+<tr>
+<td>! leverageability/reuse</td>
+<td>leverage common components across multiple products</td>
+</tr>
+<tr>
+<td>localization</td>
+<td>support multiple languages, currencies</td>
+</tr>
+<tr>
+<td>! maintainability</td>
+<td>how easy to apply changes and enhance system</td>
+</tr>
+<tr>
+<td>portability</td>
+<td>does system need to run on more than one platform</td>
+</tr>
+<tr>
+<td>! supportability</td>
+<td>level of technical support, logging required to debug</td>
+</tr>
+<tr>
+<td>upgradeability</td>
+<td>ability to upgrade from prev vers on servers and clients</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cross-cutting-1">cross-cutting</h2>
+<table>
+<thead>
+<tr>
+<th>term</th>
+<th>def</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>accessibility</td>
+<td>access for users with colorblindness or hearing loss</td>
+</tr>
+<tr>
+<td>archivability</td>
+<td>archived to separate database</td>
+</tr>
+<tr>
+<td>authentication</td>
+<td>security req for login</td>
+</tr>
+<tr>
+<td>authorization</td>
+<td>security req for users access only certain functions</td>
+</tr>
+<tr>
+<td>legal</td>
+<td>legislative constraint system operate in</td>
+</tr>
+<tr>
+<td>privacy</td>
+<td>hide transactions from internal employees</td>
+</tr>
+<tr>
+<td>security</td>
+<td>data encrypted on database, network comms, remote access</td>
+</tr>
+<tr>
+<td>supportability</td>
+<td>level of technical support, logging required to debug</td>
+</tr>
+<tr>
+<td>usability/achievability</td>
+<td>ability to upgrade from prev vers on servers and clients</td>
+</tr>
+</tbody>
+</table>
+<h1 id="chapter-5-identifying-architecture-characteristics">chapter 5 identifying architecture characteristics</h1>
+<p>collaborate with problem domain stakeholders to determine what is truly important from domain perspective</p>
+<h1 id="kata">kata</h1>
+<h2 id="description">description</h2>
+<ul>
+<li>domain problem the system is trying to solve</li>
+</ul>
+<h2 id="users">users</h2>
+<ul>
+<li>the numbers/types of users</li>
+</ul>
+<h2 id="requirements">requirements</h2>
+<ul>
+<li>domain level requirements</li>
+</ul>
+<h2 id="additional-context">additional context</h2>
+<ul>
+<li>implicit knowledge of problem domain</li>
+</ul>
+<h1 id="silicon-sandwiches">silicon sandwiches</h1>
+<h2 id="desc">desc</h2>
+<p>national sandwich shop wants online ordering</p>
+<h2 id="users-1">users</h2>
+<p>thousands, one day millions</p>
+<h2 id="requirements-1">requirements</h2>
+<p>users place order, traffic mapping services</p>
+<ul>
+<li>reliability</li>
+</ul>
+<p>mobile accessibility</p>
+<ul>
+<li>performance, portability</li>
+</ul>
+<p>promotions, specials</p>
+<ul>
+<li>customizability</li>
+</ul>
+<p>online payment</p>
+<ul>
+<li>security</li>
+</ul>
+<p>franchised</p>
+<ul>
+<li>feasibility</li>
+</ul>
+<p>expand overseas</p>
+<ul>
+<li>internationalization, localization</li>
+</ul>
+<h2 id="implicit">implicit</h2>
+<p>security</p>
+<p>customizability</p>
+<h1 id="room-with-a-view">room with a view</h1>
+<h2 id="desc-1">desc</h2>
+<p>hotel reservation and management system</p>
+<h2 id="explicit">explicit</h2>
+<p>system web based and made via web</p>
+<p>guests and hotel staff</p>
+<ul>
+<li>
+<p>peak season more people, scalability</p>
+</li>
+<li>
+<p>availability, performance</p>
+</li>
+</ul>
+<p>book types of room with pictures</p>
+<ul>
+<li>customizability</li>
+</ul>
+<p>room status</p>
+<ul>
+<li>availability</li>
+</ul>
+<p>direct to devices attached to cleaning carts</p>
+<ul>
+<li>want to plug new connections to hardware in, extensibility</li>
+</ul>
+<p>upgrade on existing</p>
+<ul>
+<li>usability</li>
+</ul>
+<h2 id="implicit-1">implicit</h2>
+<p>security, for payments</p>
+<p>authorization, hotel staff sees different view than users</p>
+<p>it is a hotel, has locations around the world, localization</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav
+    class="mt-24 flex rounded-lg bg-black/[3%] p-1.5 text-lg dark:bg-white/[8%]"
+  >
+    
+    <a
+      class="flex w-1/2 items-center rounded-md p-6 pr-3 no-underline hover:bg-black/[2%]"
+      href="http://example.org/posts/ironsworn/"
+      ><span class="mr-1.5">←</span><span>world of ironsworn</span></a
+    >
+    
+    
+  </nav>
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="http://example.org/">Notes Website</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >▷ Paper 6</a
+  >
+</footer>
+
+  </body>
+</html>
