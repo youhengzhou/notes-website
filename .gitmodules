@@ -1,0 +1,9 @@
+[submodule "archetypes/themes/ananke"]
+	path = archetypes/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke
+[submodule "archetypes/themes/gokarna"]
+	path = archetypes/themes/gokarna
+	url = https://github.com/526avijitgupta/gokarna.git
+[submodule "hugo-paper"]
+	path = hugo-paper
+	url = https://github.com/nanxiaobei/hugo-paper.git
