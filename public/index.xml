@@ -6,7 +6,22 @@
     <description>Recent content on Notes Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Jan 2023 10:02:32 -0500</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sysc 4120 lecture 7 notes</title>
+      <link>http://example.org/posts/l7/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/l7/</guid>
+      <description>lecture 7 chapter 8 component based thinking how architect think about components
+how architect decompose system into components
+component based thinking module structure that is assigned some specific computational responsibilities that form the basis of work assignments for programming teams
+how can we divide work up among our development teams
+component principal unit of computation
+could be a lot of things, peer, client, server etc.
+explain typically as architect, we think more in terms of components than physical modules</description>
+    </item>
+    
     <item>
       <title>world of ironsworn</title>
       <link>http://example.org/posts/ironsworn/</link>

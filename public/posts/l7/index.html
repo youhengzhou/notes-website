@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>sysc 4120 lecture 7 notes | Notes Website</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="lecture 7 chapter 8 component based thinking how architect think about components
+how architect decompose system into components
+component based thinking module structure that is assigned some specific computational responsibilities that form the basis of work assignments for programming teams
+how can we divide work up among our development teams
+component principal unit of computation
+could be a lot of things, peer, client, server etc.
+explain typically as architect, we think more in terms of components than physical modules">
+    <meta name="generator" content="Hugo 0.110.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="sysc 4120 lecture 7 notes" />
+<meta property="og:description" content="lecture 7 chapter 8 component based thinking how architect think about components
+how architect decompose system into components
+component based thinking module structure that is assigned some specific computational responsibilities that form the basis of work assignments for programming teams
+how can we divide work up among our development teams
+component principal unit of computation
+could be a lot of things, peer, client, server etc.
+explain typically as architect, we think more in terms of components than physical modules" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/l7/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-30T00:00:00+00:00" />
+<meta itemprop="name" content="sysc 4120 lecture 7 notes">
+<meta itemprop="description" content="lecture 7 chapter 8 component based thinking how architect think about components
+how architect decompose system into components
+component based thinking module structure that is assigned some specific computational responsibilities that form the basis of work assignments for programming teams
+how can we divide work up among our development teams
+component principal unit of computation
+could be a lot of things, peer, client, server etc.
+explain typically as architect, we think more in terms of components than physical modules"><meta itemprop="datePublished" content="2023-01-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-01-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="989">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="sysc 4120 lecture 7 notes"/>
+<meta name="twitter:description" content="lecture 7 chapter 8 component based thinking how architect think about components
+how architect decompose system into components
+component based thinking module structure that is assigned some specific computational responsibilities that form the basis of work assignments for programming teams
+how can we divide work up among our development teams
+component principal unit of computation
+could be a lot of things, peer, client, server etc.
+explain typically as architect, we think more in terms of components than physical modules"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Notes Website
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">sysc 4120 lecture 7 notes</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-01-30T00:00:00Z">January 30, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="lecture-7-chapter-8-component-based-thinking">lecture 7 chapter 8 component based thinking</h1>
+<p>how architect think about components</p>
+<p>how architect decompose system into components</p>
+<h1 id="component-based-thinking">component based thinking</h1>
+<h2 id="module">module</h2>
+<p>structure that is assigned some specific computational responsibilities that form the basis of work assignments for programming teams</p>
+<p>how can we divide work up among our development teams</p>
+<h2 id="component">component</h2>
+<p>principal unit of computation</p>
+<p>could be a lot of things, peer, client, server etc.</p>
+<h2 id="explain">explain</h2>
+<p>typically as architect, we think more in terms of components than physical modules</p>
+<h1 id="components--physical-manifestation-of-a-module-">components = physical manifestation of a module ???</h1>
+<p>like code binaries</p>
+<p>modules = physical code</p>
+<p>developers physically package modules, jar for Java, dll for .NET, gem for Ruby</p>
+<h1 id="different-varieties-of-components">different varieties of components</h1>
+<p>we can have different forms of components</p>
+<p>wrapper of code = library (grouping of classes and functions)</p>
+<p>layer of subsystem, larger, but still cohesive</p>
+<ul>
+<li>system = composition of subsystems</li>
+</ul>
+<p>event processor, process message, respond to event</p>
+<p>distributed service, tend to run on its own address space</p>
+<ul>
+<li>
+<p>typically communicate through low level protocol, TCP/IP, REST</p>
+</li>
+<li>
+<p>we like to package things as services because they can be deployed in a much more distributed manner than something like libraries</p>
+</li>
+</ul>
+<p>all this to say components come in different shapes and sizes</p>
+<h1 id="component-scope">component scope</h1>
+<p>architect don&rsquo;t have to use components</p>
+<p>if our code is small, simple, we don&rsquo;t have to make big clunky architecture to handle it</p>
+<h1 id="role-of-the-architect">role of the architect</h1>
+<p>software architect often collaborate with business analysts, subject matter experts, developers, etc.</p>
+<p>we want to build out of bricks, not out of straws, carefully consider fundamental building blocks of our software, which are componentsS</p>
+<p>architect consider how to decompose and partition components</p>
+<p>architect define, refine, manage, governs components, they are the first to initially define what the components of a system is going to be</p>
+<h1 id="architecture-in-development-process">architecture in development process</h1>
+<p>architect is independent from development process</p>
+<ul>
+<li>exception, in agile when development process and architect process can be tightly coupled</li>
+</ul>
+<p>components are lowest level of software system</p>
+<p>component are usually classes or functions</p>
+<ul>
+<li>
+<p>but architect usually does not design classes, technical leads usually design and apply design patterns</p>
+</li>
+<li>
+<p>architect shouldn&rsquo;t try to micro manage the design process of software from top to bottom, they should rely and collaborate with their team to do this in an efficient manner</p>
+</li>
+</ul>
+<h1 id="architecture-partitioning">architecture partitioning</h1>
+<p>first law of software architecture, everything is a trade off</p>
+<p>before we identify components, we partition architecture</p>
+<p>components are general containership mechanism</p>
+<p>different styles of partitioning comes with different set of trade-offs</p>
+<p>depends on different software, we will require different trade-offs</p>
+<h1 id="top-level-architecture-partitioning-layered-and-modular">top level architecture partitioning: layered and modular</h1>
+<p>layered monolith vs modular monolith</p>
+<h2 id="layered-monolith">layered monolith</h2>
+<p>made of layers, they each are some grouping of containers</p>
+<h2 id="modular-monolith">modular monolith</h2>
+<p>instead of packaging everything into layers that stacks on top of each other, we pack everything into simple modules that all work with each other</p>
+<p>a collection of modules that perform specific tasks</p>
+<h2 id="explain-1">explain</h2>
+<p>they are are also one architecture quanta, because they have one component, and one database</p>
+<p>they can also have submodules or subsystems, as each of the code blocks in the modular monolith can be complicated enough to have its own modules, or own components</p>
+<p>but with regards to the software architecture as a whole, they are considered their components</p>
+<h1 id="technical-partitioning">technical partitioning</h1>
+<p>two general styles of partitioning</p>
+<p>very much like layered architecture</p>
+<p>partitioning functionality of the system into technical capabilities</p>
+<p>each layer, its own technical capability</p>
+<p>organizing principles is separation of concerns</p>
+<h1 id="but-difficult-to-maintain-and-result-in-higher-level-of-coupling-within-each-components-">but difficult to maintain, and result in higher level of coupling within each components ???</h1>
+<p>specific to that case, lots of arrows pointing out</p>
+<h1 id="domain-partitioning">domain partitioning</h1>
+<p>organize architect using domains, workflows, the different kinds of things the system is performing that are independent and decoupled from each other</p>
+<p>workflows are general ways someone might use and interact with system</p>
+<p>domain partitioning decomposes complex systems</p>
+<p>each components can have their own persistence library and have separate layer for business rules, but top level partitioning revolves around domains</p>
+<h1 id="technical-vs-domain">technical vs domain</h1>
+<p>domain of checkout smeared across many layers we have, not a good idea</p>
+<p>it depends, which things are more changing, which partitioning to use</p>
+<p>code for fetching SQL vs code for implementing the SQL database</p>
+<h1 id="silicon-sandwiches">silicon sandwiches</h1>
+<h1 id="domain">domain</h1>
+<p>components has subcomponents</p>
+<p>components and their interface with other components</p>
+<h1 id="technical">technical</h1>
+<p>not layered we usually see, but have local, common</p>
+<p>also we can have components and subcomponents here too</p>
+<p>isolate into technical capabilities as needed</p>
+<h1 id="evaluating-domain-partitioning">evaluating domain partitioning</h1>
+<h2 id="advantages">advantages</h2>
+<p>closer to biz function</p>
+<p>easier to build for teams</p>
+<p>align closely to modular monolith, can be distributed microservices</p>
+<p>way message flows matches problem domain</p>
+<p>easy to migrate data and component to distributed architecture, can use microservices architecture if we choose</p>
+<h2 id="disadvantages">disadvantages</h2>
+<p>local customization code appear in multiple places</p>
+<p>local customization code changes often and per customers, this can be a big disadvantage</p>
+<h1 id="technical-partitioning-1">technical partitioning</h1>
+<h2 id="advantages-1">advantages</h2>
+<p>separate customization code</p>
+<p>align to layered architecture pattern</p>
+<h2 id="disadvantages-1">disadvantages</h2>
+<p>global coupling</p>
+<p>have recipes in both command local, changes to either component affect other components, high degree of global coupling</p>
+<p>in domain it is easier to see how data are separated, now it is more difficult for the data to be distributed</p>
+<h1 id="choice">choice</h1>
+<p>domain, common trends in last decade points towards domain</p>
+<p>but because it is trend doesn&rsquo;t mean it&rsquo;s rule</p>
+<p>for technical, you have common and local easily seen</p>
+<p>for domain, you have to fetch everything to know if it is common or local</p>
+<h1 id="check-your-understanding">check your understanding</h1>
+<h2 id="advantage-of-domain-partitioning">advantage of domain partitioning</h2>
+<p>more closely related to how business functions</p>
+<p>we are partitioning on general workflow, how we actually use the system, and how the system are used</p>
+<p>component, each part, solve a problem we have</p>
+<p>most cases, realistic software, workflow that cut across technical capabilities, instead of within technical capabilities</p>
+<h2 id="advantage-of-technical-partitioning">advantage of technical partitioning</h2>
+<p>more secure system, all the persistence data in database</p>
+<p>simpler workflow, simpler system, better to use technical</p>
+<p>instead of decomposing a single workflow into multiple workflows</p>
+<p>support separation of concerns, enable developers to find categories of code quickly</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  Notes Website 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
