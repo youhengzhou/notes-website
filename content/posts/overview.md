@@ -147,6 +147,81 @@ pairwise, matched participants
 
 # lec 7 qualitive data analysis (codes)
 
+qualitative, themes, patterns, stories
+
+deductive, identify themes from data
+
+inductive, categorize data into themes
+
+analyze critical incidents
+
+cohen's kappa
+
+| value of kappa | level of agreement |
+| -------------- | ------------------ |
+| 0-.20          | none               |
+| .21-39         | minimal            |
+| .40-59         | weak               |
+| .60-.79        | moderate           |
+| .80-.90        | strong             |
+| above .90      | almost perfect     |
+
+thematic analysis
+
+-   gather data
+
+-   read data
+
+-   code text
+
+-   evaluate theme for good fit
+
+theme, important about data in relation to study goal
+
+code, word or phrase that act as label for segment of text
+
+descriptive, interpretive code
+
+grounded theory
+
+-   open, identify categories
+
+-   axial, flex out and link to subcategories
+
+-   selective, form theoretical scheme
+
 # lec 8 quantitative data analysis
 
+mean, median, mode
+
+histogram
+
+boxplot
+
+bar graph
+
+scatterplot
+
+line graph
+
+heatmap
+
+hypothesis, null hypothesis p < 0.05, reject null
+
+types of variables
+
+-   nominal, categories, gender
+
+-   ordinal, likert scale responses, age groups
+
+-   continuous, time, # errors
+
 # lec 9 ID process
+
+focus on users
+
+measure user's reactions
+
+iterative design
+
+user/stakeholders
