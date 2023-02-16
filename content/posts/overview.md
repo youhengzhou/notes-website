@@ -373,6 +373,8 @@ Team
 Software Engineering: Different Skills (DB, Networking, Front/Back End)
 Interaction Design: Different Skills (behavioural, cognition, business, art)
 
+# lec 10 ID process (week 6 1)
+
 Discovering Requirements
 Exploring the problem space
 What users need
