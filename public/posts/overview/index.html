@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>hci midterm overview - Notes Website</title>
+
+  
+  <meta name="theme-color" />
+  
+  <meta name="description" content="lec 2 UX
+accessibility
+inclusiveness
+impairments
+universal design
+  equitable use
+  flexibility in use
+  simple and intuitive use
+  perceptible information
+  tolerance for error
+  low physical effort
+  size and space for approach and use
+  usability goals
+  effectiveness
+  efficiency
+  safety
+  utility
+  learnability
+  memorability
+  design principles" />
+  <meta
+    name="author"
+    content=""
+  />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://youhengzhou.github.io/notes-website/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://youhengzhou.github.io/notes-website/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://youhengzhou.github.io/notes-website/theme.png" />
+
+  
+  
+  
+  
+
+  
+
+  
+  <link rel="icon" href="https://youhengzhou.github.io/notes-website/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://youhengzhou.github.io/notes-website/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="hci midterm overview" />
+<meta property="og:description" content="lec 2 UX
+accessibility
+inclusiveness
+impairments
+universal design
+  equitable use
+  flexibility in use
+  simple and intuitive use
+  perceptible information
+  tolerance for error
+  low physical effort
+  size and space for approach and use
+  usability goals
+  effectiveness
+  efficiency
+  safety
+  utility
+  learnability
+  memorability
+  design principles" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://youhengzhou.github.io/notes-website/posts/overview/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-02-15T00:00:00+00:00" />
+
+
+  
+  <meta itemprop="name" content="hci midterm overview">
+<meta itemprop="description" content="lec 2 UX
+accessibility
+inclusiveness
+impairments
+universal design
+  equitable use
+  flexibility in use
+  simple and intuitive use
+  perceptible information
+  tolerance for error
+  low physical effort
+  size and space for approach and use
+  usability goals
+  effectiveness
+  efficiency
+  safety
+  utility
+  learnability
+  memorability
+  design principles"><meta itemprop="datePublished" content="2023-02-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-02-15T00:00:00+00:00" />
+<meta itemprop="wordCount" content="251">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="hci midterm overview"/>
+<meta name="twitter:description" content="lec 2 UX
+accessibility
+inclusiveness
+impairments
+universal design
+  equitable use
+  flexibility in use
+  simple and intuitive use
+  perceptible information
+  tolerance for error
+  low physical effort
+  size and space for approach and use
+  usability goals
+  effectiveness
+  efficiency
+  safety
+  utility
+  learnability
+  memorability
+  design principles"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold"
+      href="https://youhengzhou.github.io/notes-website/"
+      >Notes Website</a
+    >
+    <a
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+    ></a>
+  </div>
+
+  <a
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+  ></a>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-20 pb-32 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">hci midterm overview</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>Feb 15, 2023</time>
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h1 id="lec-2">lec 2</h1>
+<p>UX</p>
+<p>accessibility</p>
+<p>inclusiveness</p>
+<p>impairments</p>
+<p>universal design</p>
+<ul>
+<li>
+<p>equitable use</p>
+</li>
+<li>
+<p>flexibility in use</p>
+</li>
+<li>
+<p>simple and intuitive use</p>
+</li>
+<li>
+<p>perceptible information</p>
+</li>
+<li>
+<p>tolerance for error</p>
+</li>
+<li>
+<p>low physical effort</p>
+</li>
+<li>
+<p>size and space for approach and use</p>
+</li>
+</ul>
+<p>usability goals</p>
+<ul>
+<li>
+<p>effectiveness</p>
+</li>
+<li>
+<p>efficiency</p>
+</li>
+<li>
+<p>safety</p>
+</li>
+<li>
+<p>utility</p>
+</li>
+<li>
+<p>learnability</p>
+</li>
+<li>
+<p>memorability</p>
+</li>
+</ul>
+<p>design principles</p>
+<ul>
+<li>
+<p>visibility</p>
+</li>
+<li>
+<p>feedback</p>
+</li>
+<li>
+<p>constraints</p>
+</li>
+<li>
+<p>consistency</p>
+</li>
+<li>
+<p>affordance</p>
+</li>
+</ul>
+<h1 id="lec-3-data-gathering-heuristics">lec 3 data gathering (heuristics)</h1>
+<p>heuristic evaluations</p>
+<ul>
+<li>
+<p>visibility of system status</p>
+</li>
+<li>
+<p>match between system and real world</p>
+</li>
+<li>
+<p>user control and freedom</p>
+</li>
+<li>
+<p>consistency and standards</p>
+</li>
+<li>
+<p>error prevention</p>
+</li>
+<li>
+<p>recognition rather than recall</p>
+</li>
+<li>
+<p>flexibility and efficiency of use</p>
+</li>
+<li>
+<p>aesthetic and minimalistic design</p>
+</li>
+<li>
+<p>help users with errors</p>
+</li>
+<li>
+<p>help and documentation</p>
+</li>
+</ul>
+<p>severity ratings</p>
+<ul>
+<li>
+<p>1 cosmetic</p>
+</li>
+<li>
+<p>2 minor usability</p>
+</li>
+<li>
+<p>3 major usability</p>
+</li>
+<li>
+<p>4 usability catastrophe, fix before release</p>
+</li>
+</ul>
+<p>cognitive walkthrough</p>
+<ul>
+<li>
+<p>will the correct action be sufficiently evident to the user</p>
+</li>
+<li>
+<p>will the user notice that the correct action is available</p>
+</li>
+<li>
+<p>will the user associate and interpret the response from the action correctly</p>
+</li>
+</ul>
+<p>pluralistic walkthrough</p>
+<p>fitt&rsquo;s law, time to object = distance and object size</p>
+<h1 id="lec-4-data-gathering-interviews">lec 4 data gathering (interviews)</h1>
+<p>unstructured, structured, semi structured, focus groups</p>
+<p>closed questions, open questions</p>
+<p>avoid long, jargon, &ldquo;why do you like&rdquo;, biases</p>
+<p>running the interview</p>
+<ul>
+<li>
+<p>introduction</p>
+</li>
+<li>
+<p>warm-up</p>
+</li>
+<li>
+<p>main body</p>
+</li>
+<li>
+<p>cool-off period</p>
+</li>
+<li>
+<p>closure</p>
+</li>
+</ul>
+<p>props</p>
+<p>surveys</p>
+<p>likert, measure of agreement</p>
+<p>online questionnaire, data cleaning, undetermined sample size, responding more than once</p>
+<h1 id="lec-6-data-gathering-observation">lec 6 data gathering (observation)</h1>
+<p>direct, influence participants</p>
+<p>indirect, far, creepy</p>
+<p>who, where, what</p>
+<p>usability testing, testing device, not participants</p>
+<p>between subjects, different groups</p>
+<p>within subjects, same group</p>
+<p>pairwise, matched participants</p>
+<h1 id="lec-7-qualitive-data-analysis-codes">lec 7 qualitive data analysis (codes)</h1>
+<h1 id="lec-8-quantitative-data-analysis">lec 8 quantitative data analysis</h1>
+<h1 id="lec-9-id-process">lec 9 ID process</h1>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav
+    class="mt-24 flex rounded-lg bg-black/[3%] p-1.5 text-lg dark:bg-white/[8%]"
+  >
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-md p-6 pl-3 no-underline hover:bg-black/[2%]"
+      href="https://youhengzhou.github.io/notes-website/posts/l7/"
+      ><span>sysc 4120 lecture 7 notes</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://youhengzhou.github.io/notes-website/">Notes Website</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >▷ Paper 6</a
+  >
+</footer>
+
+  </body>
+</html>
