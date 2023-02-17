@@ -190,7 +190,7 @@ grounded theory
 
 -   open, identify categories
 
--   axial, flex out and link to subcategories
+-   axial, flesh out and link to subcategories
 
 -   selective, form theoretical scheme
 
