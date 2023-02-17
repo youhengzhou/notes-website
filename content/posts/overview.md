@@ -265,14 +265,58 @@ explainability, can people understand
 
 # lec 9 ID process (week 5 2)
 
-a process focused on users
+interaction design, a process focused on users goals
+
+ID lifecycle model
+
+-   discover requirements
+
+-   design alternatives
+
+-   prototyping
+
+-   evaluating
 
 measure user's reactions
 
 iterative design
 
-user/stakeholders
+user expectation management
+
+user ownership, stakeholders
+
+degrees of user involvement
+
+-   member of design team
+
+-   face to face group or individual activities
+
+-   online contribution
+
+-   after product release
+
+users rarely know what is possible
+
+SE vs ID process
 
 # lec 10 ID process (week 6 1)
 
-Discovering Requirements
+user stories, as a role, want behaviour, so benefit
+
+contextual interviews
+
+-   context
+
+-   partnership
+
+-   interpretation
+
+-   focus
+
+personas, visualize user
+
+scenarios, user story
+
+use case, interaction with system
+
+essential use case, abstraction of system obligations
