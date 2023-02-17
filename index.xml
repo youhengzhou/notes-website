@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes Website</title><link>https://youhengzhou.github.io/notes-website/</link><description>Recent content on Notes Website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://youhengzhou.github.io/notes-website/index.xml" rel="self" type="application/rss+xml"/><item><title>hci midterm overview</title><link>https://youhengzhou.github.io/notes-website/posts/overview/</link><pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate><guid>https://youhengzhou.github.io/notes-website/posts/overview/</guid><description>lec 2 UX
-accessibility
-inclusiveness
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes Website</title><link>https://youhengzhou.github.io/notes-website/</link><description>Recent content on Notes Website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://youhengzhou.github.io/notes-website/index.xml" rel="self" type="application/rss+xml"/><item><title>hci midterm overview</title><link>https://youhengzhou.github.io/notes-website/posts/overview/</link><pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate><guid>https://youhengzhou.github.io/notes-website/posts/overview/</guid><description>lec 1 interaction design is process
+lec 2 UX
+accessibility, extent product is accessible for those with disabilities
+inclusiveness, fair, open, equal to everyone, smartphones being designed and made available for all
 impairments
 universal design
 equitable use
@@ -18,16 +19,7 @@ utility
 learnability
 memorability
 design principles
-visibility
-feedback
-constraints
-consistency
-affordance
-lec 3 data gathering (heuristics) heuristic evaluations
-visibility of system status
-match between system and real world
-user control and freedom
-consistency and standards</description></item><item><title>sysc 4120 lecture 7 notes</title><link>https://youhengzhou.github.io/notes-website/posts/l7/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>https://youhengzhou.github.io/notes-website/posts/l7/</guid><description>lecture 7 chapter 8 component based thinking how architect think about components
+visibility</description></item><item><title>sysc 4120 lecture 7 notes</title><link>https://youhengzhou.github.io/notes-website/posts/l7/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>https://youhengzhou.github.io/notes-website/posts/l7/</guid><description>lecture 7 chapter 8 component based thinking how architect think about components
 how architect decompose system into components
 component based thinking module structure that is assigned some specific computational responsibilities that form the basis of work assignments for programming teams
 how can we divide work up among our development teams
