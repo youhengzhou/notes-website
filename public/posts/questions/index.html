@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>software arch week summaries - Notes Website</title>
+
+  
+  <meta name="theme-color" />
+  
+  <meta name="description" content="week summary week 2: gathering characteristics from katas operational structural cross cutting week 3: those math formulas and learning about quantas afferent/incoming, efferent/outgoing coupling abstractness, instability, distance from main sequence Ma/Me &#43; Ce/(Ce&#43;Ca) - 1 LCOM sum1-&gt;a(m-(Aj)/m)/a types of connascence static name, type, meaning/convention, position, algorithm dynamic execution, timing, values, identity cyclomatic complexity CC = E - N &#43; 2P fitness function week 4: technical vs domain, component identification process, entity trap, actor, event storming, workflow approach architecture partitioning domain partitioning technical partitioning component identification process identifying initial components assign requirements to components analyze roles and responsibilities analyze architecture characteristics restructure components component design entity trap actor/actions event storming workflow week 5: centralized vs distributed vs decentralized, fallacies of distributed, monolithic vs distributed client/server architecture style centralized distributed decentralized fallacies of distributed computing the network is reliable latency is zero bandwidth is infinite the network is secure the topology never changes there is only one administrator transport cost is zero the network is homogeneous monolithic vs distributed architecture style monolithic architecture distributed architecture week 6: layered, pipeline, microkernel, mvc monolithic architecture patterns layered pipeline microkernel mvc 4 &#43; 1 model triangle specifies a non domain design consideration" />
+  <meta
+    name="author"
+    content=""
+  />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://youhengzhou.github.io/notes-website/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://youhengzhou.github.io/notes-website/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://youhengzhou.github.io/notes-website/theme.png" />
+
+  
+  
+  
+  
+
+  
+
+  
+  <link rel="icon" href="https://youhengzhou.github.io/notes-website/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://youhengzhou.github.io/notes-website/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.110.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="software arch week summaries" />
+<meta property="og:description" content="week summary week 2: gathering characteristics from katas operational structural cross cutting week 3: those math formulas and learning about quantas afferent/incoming, efferent/outgoing coupling abstractness, instability, distance from main sequence Ma/Me &#43; Ce/(Ce&#43;Ca) - 1 LCOM sum1-&gt;a(m-(Aj)/m)/a types of connascence static name, type, meaning/convention, position, algorithm dynamic execution, timing, values, identity cyclomatic complexity CC = E - N &#43; 2P fitness function week 4: technical vs domain, component identification process, entity trap, actor, event storming, workflow approach architecture partitioning domain partitioning technical partitioning component identification process identifying initial components assign requirements to components analyze roles and responsibilities analyze architecture characteristics restructure components component design entity trap actor/actions event storming workflow week 5: centralized vs distributed vs decentralized, fallacies of distributed, monolithic vs distributed client/server architecture style centralized distributed decentralized fallacies of distributed computing the network is reliable latency is zero bandwidth is infinite the network is secure the topology never changes there is only one administrator transport cost is zero the network is homogeneous monolithic vs distributed architecture style monolithic architecture distributed architecture week 6: layered, pipeline, microkernel, mvc monolithic architecture patterns layered pipeline microkernel mvc 4 &#43; 1 model triangle specifies a non domain design consideration" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://youhengzhou.github.io/notes-website/posts/questions/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-02-25T00:00:00+00:00" />
+
+  
+  <meta itemprop="name" content="software arch week summaries">
+<meta itemprop="description" content="week summary week 2: gathering characteristics from katas operational structural cross cutting week 3: those math formulas and learning about quantas afferent/incoming, efferent/outgoing coupling abstractness, instability, distance from main sequence Ma/Me &#43; Ce/(Ce&#43;Ca) - 1 LCOM sum1-&gt;a(m-(Aj)/m)/a types of connascence static name, type, meaning/convention, position, algorithm dynamic execution, timing, values, identity cyclomatic complexity CC = E - N &#43; 2P fitness function week 4: technical vs domain, component identification process, entity trap, actor, event storming, workflow approach architecture partitioning domain partitioning technical partitioning component identification process identifying initial components assign requirements to components analyze roles and responsibilities analyze architecture characteristics restructure components component design entity trap actor/actions event storming workflow week 5: centralized vs distributed vs decentralized, fallacies of distributed, monolithic vs distributed client/server architecture style centralized distributed decentralized fallacies of distributed computing the network is reliable latency is zero bandwidth is infinite the network is secure the topology never changes there is only one administrator transport cost is zero the network is homogeneous monolithic vs distributed architecture style monolithic architecture distributed architecture week 6: layered, pipeline, microkernel, mvc monolithic architecture patterns layered pipeline microkernel mvc 4 &#43; 1 model triangle specifies a non domain design consideration"><meta itemprop="datePublished" content="2023-02-25T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-02-25T00:00:00+00:00" />
+<meta itemprop="wordCount" content="289">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="software arch week summaries"/>
+<meta name="twitter:description" content="week summary week 2: gathering characteristics from katas operational structural cross cutting week 3: those math formulas and learning about quantas afferent/incoming, efferent/outgoing coupling abstractness, instability, distance from main sequence Ma/Me &#43; Ce/(Ce&#43;Ca) - 1 LCOM sum1-&gt;a(m-(Aj)/m)/a types of connascence static name, type, meaning/convention, position, algorithm dynamic execution, timing, values, identity cyclomatic complexity CC = E - N &#43; 2P fitness function week 4: technical vs domain, component identification process, entity trap, actor, event storming, workflow approach architecture partitioning domain partitioning technical partitioning component identification process identifying initial components assign requirements to components analyze roles and responsibilities analyze architecture characteristics restructure components component design entity trap actor/actions event storming workflow week 5: centralized vs distributed vs decentralized, fallacies of distributed, monolithic vs distributed client/server architecture style centralized distributed decentralized fallacies of distributed computing the network is reliable latency is zero bandwidth is infinite the network is secure the topology never changes there is only one administrator transport cost is zero the network is homogeneous monolithic vs distributed architecture style monolithic architecture distributed architecture week 6: layered, pipeline, microkernel, mvc monolithic architecture patterns layered pipeline microkernel mvc 4 &#43; 1 model triangle specifies a non domain design consideration"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold"
+      href="https://youhengzhou.github.io/notes-website/"
+      >Notes Website</a
+    >
+    <a
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+    ></a>
+  </div>
+
+  <a
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+  ></a>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-20 pb-32 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">software arch week summaries</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>Feb 25, 2023</time>
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h1 id="week-summary">week summary</h1>
+<h1 id="week-2-gathering-characteristics-from-katas">week 2: gathering characteristics from katas</h1>
+<ul>
+<li>operational</li>
+<li>structural</li>
+<li>cross cutting</li>
+</ul>
+<h1 id="week-3-those-math-formulas-and-learning-about-quantas">week 3: those math formulas and learning about quantas</h1>
+<ul>
+<li>afferent/incoming, efferent/outgoing coupling</li>
+<li>abstractness, instability, distance from main sequence
+<ul>
+<li>Ma/Me + Ce/(Ce+Ca) - 1</li>
+</ul>
+</li>
+<li>LCOM
+<ul>
+<li>sum1-&gt;a(m-(Aj)/m)/a</li>
+</ul>
+</li>
+<li>types of connascence
+<ul>
+<li>static
+<ul>
+<li>name, type, meaning/convention, position, algorithm</li>
+</ul>
+</li>
+<li>dynamic
+<ul>
+<li>execution, timing, values, identity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>cyclomatic complexity
+<ul>
+<li>CC = E - N + 2P</li>
+</ul>
+</li>
+<li>fitness function</li>
+</ul>
+<h1 id="week-4-technical-vs-domain-component-identification-process-entity-trap-actor-event-storming-workflow-approach">week 4: technical vs domain, component identification process, entity trap, actor, event storming, workflow approach</h1>
+<ul>
+<li>architecture partitioning
+<ul>
+<li>domain partitioning</li>
+<li>technical partitioning</li>
+</ul>
+</li>
+<li>component identification process
+<ul>
+<li>identifying initial components</li>
+<li>assign requirements to components</li>
+<li>analyze roles and responsibilities</li>
+<li>analyze architecture characteristics</li>
+<li>restructure components</li>
+</ul>
+</li>
+<li>component design
+<ul>
+<li>entity trap</li>
+<li>actor/actions</li>
+<li>event storming</li>
+<li>workflow</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-5-centralized-vs-distributed-vs-decentralized-fallacies-of-distributed-monolithic-vs-distributed">week 5: centralized vs distributed vs decentralized, fallacies of distributed, monolithic vs distributed</h1>
+<ul>
+<li>client/server architecture style
+<ul>
+<li>centralized</li>
+<li>distributed</li>
+<li>decentralized</li>
+</ul>
+</li>
+<li>fallacies of distributed computing
+<ul>
+<li>the network is reliable</li>
+<li>latency is zero</li>
+<li>bandwidth is infinite</li>
+<li>the network is secure</li>
+<li>the topology never changes</li>
+<li>there is only one administrator</li>
+<li>transport cost is zero</li>
+<li>the network is homogeneous</li>
+</ul>
+</li>
+<li>monolithic vs distributed architecture style
+<ul>
+<li>monolithic architecture</li>
+<li>distributed architecture</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-6-layered-pipeline-microkernel-mvc">week 6: layered, pipeline, microkernel, mvc</h1>
+<ul>
+<li>monolithic architecture patterns
+<ul>
+<li>layered</li>
+<li>pipeline</li>
+<li>microkernel</li>
+<li>mvc</li>
+</ul>
+</li>
+</ul>
+<h1 id="4--1-model">4 + 1 model</h1>
+<h1 id="triangle">triangle</h1>
+<p>specifies a non domain design consideration</p>
+<p>influences some structural aspect of the design</p>
+<p>critical or important to application success</p>
+<h1 id="arch-characteristics">arch characteristics</h1>
+<p>operation</p>
+<p>structural</p>
+<p>cross cutting</p>
+<h1 id="explicit-stats-explicit-implicit">explicit stats, explicit, implicit</h1>
+<p>finding requirements from a kata</p>
+<h1 id="math">math</h1>
+<p>coupling</p>
+<p>LOCM</p>
+<p>cyclomatic complexity</p>
+<p>fitness function</p>
+<h1 id="technical-vs-domain">technical vs domain</h1>
+<h1 id="component-id-process">component id process</h1>
+<p>identify initial components</p>
+<p>assign requirement to components</p>
+<p>analyze roles and responsibilities</p>
+<p>analyze architecture characteristics</p>
+<p>restructure components</p>
+<h1 id="component-design">component design</h1>
+<p>entity trap</p>
+<p>actor/actions approach</p>
+<p>event storming</p>
+<p>workflow approach</p>
+<h1 id="comparing-clientserver-distributions">comparing client/server distributions</h1>
+<h1 id="fallacies-of-distributed-computing">fallacies of distributed computing</h1>
+<p>the network is reliable</p>
+<p>&hellip;</p>
+<h1 id="comparing-monolithic-and-distributed-architectures">comparing monolithic and distributed architectures</h1>
+<h1 id="4-monolithic-architecture-patterns">4 monolithic architecture patterns</h1>
+<h2 id="layered">layered</h2>
+<h2 id="pipes">pipes</h2>
+<h2 id="microkernel">microkernel</h2>
+<h2 id="mvc">mvc</h2>
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav
+    class="mt-24 flex rounded-lg bg-black/[3%] p-1.5 text-lg dark:bg-white/[8%]"
+  >
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-md p-6 pl-3 no-underline hover:bg-black/[2%]"
+      href="https://youhengzhou.github.io/notes-website/posts/overview/"
+      ><span>hci midterm overview</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://youhengzhou.github.io/notes-website/">Notes Website</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >▷ Paper 6</a
+  >
+</footer>
+
+  </body>
+</html>

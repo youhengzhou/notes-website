@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Notes Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://youhengzhou.github.io/notes-website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://youhengzhou.github.io/notes-website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>software arch week summaries</title>
+      <link>https://youhengzhou.github.io/notes-website/posts/questions/</link>
+      <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://youhengzhou.github.io/notes-website/posts/questions/</guid>
+      <description>week summary week 2: gathering characteristics from katas operational structural cross cutting week 3: those math formulas and learning about quantas afferent/incoming, efferent/outgoing coupling abstractness, instability, distance from main sequence Ma/Me + Ce/(Ce+Ca) - 1 LCOM sum1-&amp;gt;a(m-(Aj)/m)/a types of connascence static name, type, meaning/convention, position, algorithm dynamic execution, timing, values, identity cyclomatic complexity CC = E - N + 2P fitness function week 4: technical vs domain, component identification process, entity trap, actor, event storming, workflow approach architecture partitioning domain partitioning technical partitioning component identification process identifying initial components assign requirements to components analyze roles and responsibilities analyze architecture characteristics restructure components component design entity trap actor/actions event storming workflow week 5: centralized vs distributed vs decentralized, fallacies of distributed, monolithic vs distributed client/server architecture style centralized distributed decentralized fallacies of distributed computing the network is reliable latency is zero bandwidth is infinite the network is secure the topology never changes there is only one administrator transport cost is zero the network is homogeneous monolithic vs distributed architecture style monolithic architecture distributed architecture week 6: layered, pipeline, microkernel, mvc monolithic architecture patterns layered pipeline microkernel mvc 4 + 1 model triangle specifies a non domain design consideration</description>
+    </item>
+    
     <item>
       <title>hci midterm overview</title>
       <link>https://youhengzhou.github.io/notes-website/posts/overview/</link>
@@ -19,13 +28,22 @@ accessibility, extent product is accessible for those with disabilities
 inclusiveness, fair, open, equal to everyone, smartphones being designed and made available for all
 impairments
 universal design
-  equitable use
-  flexibility in use
-  simple and intuitive use
-  perceptible information
-  tolerance for error
-  low physical effort
-  size and space for approach and use</description>
+equitable use
+flexibility in use
+simple and intuitive use
+perceptible information
+tolerance for error
+low physical effort
+size and space for approach and use
+usability goals
+effectiveness
+efficiency
+safety
+utility
+learnability
+memorability
+design principles
+visibility</description>
     </item>
     
     <item>
@@ -51,8 +69,8 @@ explain typically as architect, we think more in terms of components than physic
       <guid>https://youhengzhou.github.io/notes-website/posts/ironsworn/</guid>
       <description>world of ironsworn 0,1,2 (below average, average, basics) 3,4,5,6 (capable, veteran, master, superhuman) 7,8,9 (divine)
 blah blah blah
-++++++++++++++++++++===+++++==MM===C==++++++++==CMMMM====+++++++==MM++++=++++++++MMMM++++++++==####++++++=C+++++++++++++++++CMMMMM+++++MMMcharacter wandering fencer, jorgan, wanderlust, fence 5
-resources    chaos divinity shadow joker     dice of fate roll d10, 0-4 fails, 5-9 wins       hawk storvile     far-seeing undertake a journey, resupply, +1   fierce secure an advantage   vigilant face danger enter fray   exp 0    progress track    fight a dragon     troublesome   0000 0000 0000 0000 0000   0000 0000 0000 0000 0000    stats    momentum     2       edge heart iron shadow wits     5 5 5 1 1       health spirit supply     5 5 5       wounded shaken unprepared encumbered     false false false false       maimed corrupted cursed tormented     false false false false    </description>
+++++++++++++ ++++++++===+++ ++==MM===C==+++++ +++==CMMMM====+++ ++++==MM++++=+++ +++++MMMM++++++ ++==####+++ +++=C++++ ++++++++ ++ +++CMMMMM +++++MMM character wandering fencer, jorgan, wanderlust, fence 5
+resources chaos divinity shadow joker dice of fate roll d10, 0-4 fails, 5-9 wins hawk storvile far-seeing undertake a journey, resupply, +1 fierce secure an advantage vigilant face danger enter fray exp 0 progress track fight a dragon troublesome 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 stats momentum 2 edge heart iron shadow wits 5 5 5 1 1 health spirit supply 5 5 5 wounded shaken unprepared encumbered false false false false maimed corrupted cursed tormented false false false false </description>
     </item>
     
     <item>
@@ -61,12 +79,12 @@ resources    chaos divinity shadow joker     dice of fate roll d10, 0-4 fails, 5
       <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://youhengzhou.github.io/notes-website/posts/l2/</guid>
-      <description>chapter 4 architecture characteristics defined architecture characteristic   describes a concern critical to the success of the architecture
-  like non functional but more important
-  not usually in requirements, but can be in
-  non domain design consideration   certain level of performance for the application
-  not written in requirements
-  influences some structural aspect of design  security, influences structure  critical or important to application success  fewest most possible  explicit vs implicit explicit characteristic  characteristic that appears in requirements documentation  implicit characteristic   characteristic necessary for project success, but does not appear in requirements documentation</description>
+      <description>chapter 4 architecture characteristics defined architecture characteristic describes a concern critical to the success of the architecture
+like non functional but more important
+not usually in requirements, but can be in
+non domain design consideration certain level of performance for the application
+not written in requirements
+influences some structural aspect of design security, influences structure critical or important to application success fewest most possible explicit vs implicit explicit characteristic characteristic that appears in requirements documentation implicit characteristic characteristic necessary for project success, but does not appear in requirements documentation</description>
     </item>
     
   </channel>
