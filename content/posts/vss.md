@@ -1,6 +1,6 @@
 ---
-title: "software arch week summaries"
-date: 2023-02-25
+title: "verbal story system"
+date: 2023-06-01
 ---
 
 ```
